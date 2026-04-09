@@ -31,7 +31,7 @@ app.set("io", io)
 const port= process.env.PORT || 5050;
 app.use(cors(
     {
-        origin: "*",
+        origin: "https://zingo1.onrender.com",
         credentials: true
     }
 ))
