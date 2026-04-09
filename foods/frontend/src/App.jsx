@@ -26,7 +26,7 @@ import { useEffect } from 'react'
 import { io } from 'socket.io-client'
 import { setSocket } from './redux/userSlice.js'
 import { useRef } from 'react'
-export const serverUrl= "http://localhost:8090"
+export const serverUrl= "https://zingo-backend-mgyk.onrender.com"
 
 const App = () => {
   useCurrentUser();
