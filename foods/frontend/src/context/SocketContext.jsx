@@ -10,7 +10,7 @@ export const SocketProvider = ({ children }) => {
 
   useEffect(() => {
     if (userData?._id) {
-      const newSocket = io("http://localhost:8090", { withCredentials: true });
+      const newSocket = io("https://zingo-backend-mgyk.onrender.com", { withCredentials: true });
       
       newSocket.on('connect', () => {
         newSocket.emit('identity', { userId: userData._id });
